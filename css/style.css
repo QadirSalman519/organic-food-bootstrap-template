@@ -17,6 +17,7 @@
 :root {
     --bg-white: #fff;
     --primary-text: #061738;
+    --bg-dark-color: #061738;
     --secondary-color: #60cd12;
     --light-color: #e2f6de;
     --dark-color: #03262c;
@@ -163,6 +164,7 @@ section {
     color: var(--primary-text);
     text-transform: capitalize;
     margin-bottom: 2rem;
+    margin-top: 5rem;
 }
 
 .section-subtitle {
@@ -294,4 +296,111 @@ section {
 .banner_section .carousel-caption p {
     max-width: 40rem;
     margin-bottom: 2rem;
+}
+
+/* 03 Features CSS */
+.feature_section .features-box {
+    background-color: transparent;
+    border: 0.15rem solid var(--light-color);
+    padding: 8rem 0;
+    transition: all 0.3s;
+}
+
+.feature_section .features-icon-border {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.2rem var(--light-color);
+    padding: 1.3rem;
+    display: inline-block;
+}
+
+.feature_section .features-box .features-icon {
+    height: 6.5rem;
+    width: 6.5rem;
+    background-color: var(--light-color);
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature_section .features-box .features-icon img {
+    width: 3.7rem;
+}
+
+.feature_section .features-box h3 {
+    margin-top: 1.5rem;
+    color: var(--primary-text);
+}
+
+.feature_section .features-box:hover {
+    background-color: var(--bg-dark-color);
+    border-color: var(--bg-dark-color);
+}
+
+.feature_section .features-box:hover h3 {
+    color: var(--text-white);
+}
+
+.feature_section .features-box:hover .features-icon-border {
+    border: 1px solid var(--secondary-color);
+}
+
+/* 04 About Section */
+.landing_about_section {
+    background: url('../images/about/about-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 9rem 0;
+}
+
+.landing_about_section p {
+    color: var(--primary-text);
+    margin-bottom: 2rem;
+}
+
+/* 05 Product Card Design */
+.landing_product_section .product-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0.2rem solid var(--light-color);
+    padding: 2rem 1rem;
+    transition: all 0.3s;
+}
+
+.landing_product_section .product-card .product-img {
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+.landing_product_section .product-card h3 {
+    color: var(--primary-text);
+}
+
+.landing_product_section .product-card span {
+    font-size: 1.8rem;
+    font-size: 600;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+    text-decoration: line-through;
+    transition: all 0.3s;
+}
+
+.landing_product_section .product-card .product-detail {
+    position: absolute;
+    bottom: -22rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: var(--dark-color);
+    transition: all 0.3s;
+}
+
+.landing_product_section .product-card:hover .product-detail {
+    bottom: 0;
 }
